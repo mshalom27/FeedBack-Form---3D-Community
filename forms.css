@@ -1,8 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Times New Roman", "Helvetica", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5dfe7	;
+    background: repeating-linear-gradient(
+    60deg,
+    #9e1d75,
+    #800020 20%,
+    #a52a2a 40%
+  );
+    /*background: linear-gradient(135deg, #9e1d75, #800020, #cc6699);*/
     color: #333;
 }
 
@@ -10,14 +16,18 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background:#FFFFFF;
+    background:rgb(255, 253, 253);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Times New Roman", "Helvetica", sans-serif;
+    font-size: 20px;
+
 }
 
 .container h1 {
     text-align: center;
-    color: #9e1d75;
+    color: #800020;
+    font-size: 40px;
 }
 
 form {
@@ -30,10 +40,30 @@ label {
     font-weight: bold;
 }
 
+input:focus{
+    outline: 2px solid #9e1d75; 
+    border-radius: 4px;         
+    box-shadow: 0 0 5px rgba(104, 56, 101, 0.5);      
+ }
+
+ textarea:focus{
+    outline: 2px solid #9e1d75; 
+    border-radius: 4px;         
+    box-shadow: 0 0 5px rgba(104, 56, 101, 0.5);    
+    background-color: rgb(234, 231, 231);     
+ }
+
+ select:focus{
+    outline: 2px solid #9e1d75; 
+    border-radius: 4px;         
+    box-shadow: 0 0 5px rgba(104, 56, 101, 0.5); 
+    background-color: rgb(234, 231, 231);     
+ }
+
 input, textarea, select, button {
     margin-top: 5px;
     padding: 10px;
-    border: 1px solid #E8D8E8	;
+    border: 1px solid #bc0045	;
     border-radius: 5px;
     font-size: 16px;
 }
@@ -44,14 +74,14 @@ textarea {
 
 button {
     margin-top: 20px;
-    background-color: #9e1d75;
+    background-color: #bc0045;
     color: white;
     border: none;
     font-size: 18px;
 }
 
 button:hover {
-    background-color:#8b4976 ;
+    background-color:#800020 ;
 }
 
 
