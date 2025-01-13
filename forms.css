@@ -12,21 +12,21 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 80vw;
     margin: 50px auto;
     padding: 20px;
-    background:rgb(255, 253, 253);
-    border-radius: 8px;
+    background:rgb(243, 233, 233);
+    border-radius: 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: "Times New Roman", "Helvetica", sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
 
 }
 
 .container h1 {
     text-align: center;
     color: #800020;
-    font-size: 40px;
+    font-size: 2.4rem;
 }
 
 form {
@@ -38,7 +38,7 @@ label {
     margin-top: 17px;
     font-weight: bold;
     color: #751c59;
-
+    height: 2.5rem;
 }
 
 input:focus{
@@ -52,22 +52,22 @@ input:focus{
     outline: 2px solid #9e1d75; 
     border-radius: 4px;         
     box-shadow: 0 0 5px rgba(104, 56, 101, 0.5);    
-    background-color: rgb(234, 231, 231);     
+    background-color: rgb(243, 233, 233);     
  }
 
  select:focus{
     outline: 2px solid #9e1d75; 
     border-radius: 4px;         
     box-shadow: 0 0 5px rgba(104, 56, 101, 0.5); 
-    background-color: rgb(234, 231, 231);     
+    background-color: rgb(243, 233, 233);     
  }
 
 input, textarea, select, button {
     margin-top: 5px;
     padding: 10px;
-    border: 1px solid #bc0045	;
+    border: 1px solid #800020	;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Times New Roman", "Helvetica", sans-serif;
 
 }
@@ -78,14 +78,14 @@ textarea {
 
 button {
     margin-top: 20px;
-    background-color: #bc0045;
+    background-color: #800020;
     color: white;
     border: none;
     font-size: 18px;
 }
 
 button:hover {
-    background-color:#800020 ;
+    background-color:#8000209e ;
 }
 
 
@@ -95,13 +95,71 @@ button:hover {
     margin-top: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px){ 
     .container {
-        margin: 20px;
-        padding: 15px;
+        height: 100%;
+        width: 80vw;
+        font-size: 1.25rem;
+    }
+    .container h1{
+        font-size: 2.5rem ;
+    }
+
+    input, textarea, select, button {
+        border-radius: 0.3rem;
+        font-size: 1rem;
+        font-family: "Times New Roman", "Helvetica", sans-serif;
+    
+    }
+}
+
+@media (min-width: 480px) and (max-width: 786px){ 
+    .container {
+        height: 100%;
+        width: 80vw;
+        font-size: 1.5rem;
+    }
+
+    .container h1{
+        font-size: 3rem ;
+    }
+
+    .center-container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;    /* Center vertically */
+        height: 100vh;          /* Full viewport height */
+    }
+
+    input, textarea, select, button {
+        border-radius: 5px;
+        font-size: 1.45rem;
+        font-family: "Times New Roman", "Helvetica", sans-serif;
+    
+    }
+}
+
+@media (min-width: 786px) and (max-width: 2000px){ 
+    .container {
+        height:fit-content;
+        width: 90vw;
+        font-size: 1.8rem;
+    }
+    .container h1{
+        font-size: 3.5rem ;
     }
     
-    button {
-        font-size: 16px;
+    .center-container {
+        display: grid;
+        place-items: center; /* Centers both horizontally and vertically */
+        height: 100vh;
+    }
+
+    input, textarea, select, button {
+        
+        border-radius: 5px;
+        font-size: 1.8rem;
+        font-family: "Times New Roman", "Helvetica", sans-serif;
+    
     }
 }
